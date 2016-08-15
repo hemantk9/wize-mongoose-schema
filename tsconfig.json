@@ -4,7 +4,8 @@
         "target": "es6",
         "sourceMap": true,
         "outDir": "js",
-        "removeComments": true
+        "removeComments": true,
+        "declaration": true
     },
     "files": [
         "index.ts",
