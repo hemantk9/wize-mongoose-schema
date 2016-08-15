@@ -1,0 +1,17 @@
+{
+  "name": "wize-schema-generator",
+  "version": "1.0.0",
+  "description": "Create Mongoose Schema from schema metadata",
+  "main": "js/index.js",
+  "typings": "js/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Hemant Kumar @hemantpopli",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.14.1",
+    "mongoose": "^4.5.9"
+  }
+}
