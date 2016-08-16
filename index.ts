@@ -3,7 +3,7 @@ import {WizeSchema, MongooseColumn, WizeColumn} from "wize-schema";
 import * as moment from "moment";
 export class WizeMongooseSchema {
     schema: MongooseSchema;
-    constructor (public metadata: WizeSchema) {
+    constructor (metadata: WizeSchema) {
         let schemaObject: Object = {};
         metadata.columns.forEach(function (column: WizeColumn) {
             if (column.name != '_id') {
