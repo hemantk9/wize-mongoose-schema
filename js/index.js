@@ -3,7 +3,6 @@ const mongoose_1 = require("mongoose");
 const moment = require("moment");
 class WizeMongooseSchema {
     constructor(metadata) {
-        this.metadata = metadata;
         let schemaObject = {};
         metadata.columns.forEach(function (column) {
             if (column.name != '_id') {
