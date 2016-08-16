@@ -1,7 +1,7 @@
 import { Mongoose, Schema as MongooseSchema, Types as MongooseTypes} from "mongoose";
 import {WizeSchema, MongooseColumn, WizeColumn} from "wize-schema";
 import * as moment from "moment";
-export class WizeSchemaGenerator {
+export class WizeMongooseSchema {
     schema: MongooseSchema;
     constructor (public metadata: WizeSchema) {
         let schemaObject: Object = {};

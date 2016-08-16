@@ -1,7 +1,7 @@
 "use strict";
 const mongoose_1 = require("mongoose");
 const moment = require("moment");
-class WizeSchemaGenerator {
+class WizeMongooseSchema {
     constructor(metadata) {
         this.metadata = metadata;
         let schemaObject = {};
@@ -109,5 +109,5 @@ class WizeSchemaGenerator {
         });
     }
 }
-exports.WizeSchemaGenerator = WizeSchemaGenerator;
+exports.WizeMongooseSchema = WizeMongooseSchema;
 //# sourceMappingURL=index.js.map

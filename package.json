@@ -1,5 +1,5 @@
 {
-  "name": "wize-schema-generator",
+  "name": "wize-mongoose-schema",
   "version": "1.0.0",
   "description": "Create Mongoose Schema from schema metadata",
   "main": "js/index.js",
