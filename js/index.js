@@ -117,4 +117,15 @@ function createHistorySchema(schemaName) {
     });
 }
 exports.createHistorySchema = createHistorySchema;
+function createCertificationSchema(schemaName) {
+    return new mongoose_1.Schema({
+        data: { type: {}, required: true },
+        createdAt: { type: Number, required: true, default: Date.now },
+        createdBy: { type: String, required: true },
+        identifier: { type: mongoose_1.Types.ObjectId, ref: schemaName },
+        status: { type: String, required: true },
+        comment: { type: String }
+    });
+}
+exports.createCertificationSchema = createCertificationSchema;
 //# sourceMappingURL=index.js.map

@@ -1,4 +1,4 @@
-import { Mongoose, Schema as MongooseSchema, Types as MongooseTypes } from "mongoose";
+import { Mongoose, Schema as MongooseSchema, Types as MongooseTypes, Query } from "mongoose";
 import { WizeSchema, MongooseColumn, WizeColumn } from "wize-schema";
 import * as moment from "moment";
 export function createSchema (metadata: WizeSchema): MongooseSchema {
@@ -115,5 +115,15 @@ export function createHistorySchema (schemaName: string): MongooseSchema {
         createdAt: {type: Number, required: true, default: Date.now},
         identifier: {type:MongooseTypes.ObjectId, ref: schemaName},
         email: {type: String}
+    });
+}
+export function createCertificationSchema (schemaName: string): MongooseSchema {
+    return new MongooseSchema({
+        data: {type: {}, required: true},
+        createdAt: {type: Number, required: true, default: Date.now},
+        createdBy: {type: String, required: true},
+        identifier: {type: MongooseTypes.ObjectId, ref: schemaName},
+        status: {type: String, required: true},
+        comment: {type: String}
     });
 }
